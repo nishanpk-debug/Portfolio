@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: orange;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: purple;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: darkviolet;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: purple;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #00bcd4;
+}
+
+.contact a {
+  color: purple;
+  text-decoration: none;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkviolet;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+}
+
+footer a {
+  color: orange;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* View My Work button */
+.btn {
+  display: inline-block;
+  background: white;
+  color: purple;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid purple;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: purple;
+  color: white;
+}
+
+/* About Me text */
+#about {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-content {
+  flex-direction: column;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
